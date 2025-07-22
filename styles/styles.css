@@ -1,6 +1,12 @@
 /* shared style */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 *{
     margin: 0;
 }
@@ -8,8 +14,31 @@
     color: rgba(58, 58, 58, 1);
 }
 
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 .poppins {
   font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
 }
@@ -51,6 +80,7 @@ a{
     align-items: center;
     margin-top: 50px;
     margin-bottom: 69px;
+    justify-content: space-between;
 }
 .banner img{
     max-width: 100%;
@@ -83,7 +113,7 @@ a{
 
     
 }
-.btn-primary a{
+button a{
     color: white;
     font-size: 1rem;
 }
@@ -96,6 +126,8 @@ a{
     align-items: center;
     padding-top: 35px;
     padding-bottom: 35px;
+    border-top: 2px solid rgba(10, 20, 15, 0.05);
+    border-bottom: 2px solid rgba(10, 20, 15, 0.05);
 }
 .icons img{
     max-width: 100%;
@@ -105,5 +137,153 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* main body */
+main{
+    max-width: 1047px ;
+    margin: 0 auto;
+}
+.product{
+    margin-top: 100px;
+    
+}
+.cards-title{
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgba(58, 58, 58, 1);
+    padding-bottom: 30px ;
+    font-size: 1.75rem;
+    text-shadow: 3px 3px rgba(10, 20, 15, 0.15) ;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.card .img{
+    width: 100%;
+    
+}
+.card{
+    /* border: 2px solid tomato; */
+    box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.15);
+   padding-left: 15px;
+    padding-top: 15px ;
+    padding-bottom: 30px;
+    border-radius: 5px;
+}
+.star{
+    height: 0.75rem;
+    width: 0.75rem;
+}
+.star-rating{
+    gap: 10px;
+    align-items: center;
+}
+
+.card-title{
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-top: 16px;
+    color:rgba(24, 25, 31, 1);
+}
+.price{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+.rating{
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: rgba(94, 99, 102, 1);
+
+}
+
+.card-description{
+     font-size: 0.875rem;
+    font-weight: bold;
+    color: rgba(120, 120, 133, 1);
+}
+#seemore{
+    color: rgba(224, 44, 109, 0.87);
+}
+.see-more{
+    margin-top: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: end;
+}
+
+/* gear */
+.gear{
+    max-width:1110px ;
+    margin: 0 auto;
+    gap: 96px;
+    margin-top: 100px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.gear-title{
+    font-size: 2.375rem;
+    font-weight: bold;
+    color: rgba(10, 8, 38, 1);
+}
+
+.gear-description{
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(108, 108, 108, 1);
+    padding-top: 16px;
+    padding-bottom:16px ;
+    padding-right: 100px;
+}
+
+.secondary-btn{
+    background-color: rgba(224, 44, 109, 1);
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+    padding-right: 20px;
+}
+
+/* footer */
+.foot-container{
+    max-width: 262px;
+    margin: 0 auto;
+    text-align: center;
+    
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.foot-icon{
+    max-width: 176px;
+    margin: 0 auto;
+    
+    justify-content: center;
+    gap:20px;
+}
+.foot{
+    background-color: rgba(10, 8, 38, 1) ;
+}
+.foot-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.foot-credit{
+    font-size: .875rem ;
+    margin-top:3px ;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+.foot-reserve{
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-bottom: 22px;
 }
 
